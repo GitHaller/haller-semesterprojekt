@@ -1,15 +1,35 @@
+/* styles/globals.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .header {
   display: flex;
   align-items: center;
+  justify-content: center; /* Fügt horizontale Zentrierung hinzu */
   padding: 10px;
-  background-color: var(#f0f0f0);
+  background-color: #23788d;
 }
 
 .header img {
   max-height: 500px;
-  align-items: center;
+  margin-right: 20px;
 }
 
-body {
-  background-color: #bcb8f7;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }

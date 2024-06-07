@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../public/IMG_1951.JPG'; // Pfad zum Logo
+import logo from '../public/AKELO1.JPG'; // Pfad zum Logo
 
 const Header = () => {
   return (
