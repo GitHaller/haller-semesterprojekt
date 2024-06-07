@@ -33,3 +33,32 @@ a:hover {
   margin: 0 auto;
   padding: 20px;
 }
+
+//test
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.imageContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.imageContainer:hover .image {
+  transform: scale(1.1);
+}
+
+.caption {
+  text-align: center;
+  margin-top: 5px;
+  color: #555;
+}
