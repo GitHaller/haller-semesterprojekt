@@ -26,5 +26,5 @@ jobs:
     
     - name: Deploy to Vercel
       env:
-        VERCEL_TOKEN: ${{ Oa9cReonD90IRF4owl1OL2mf }}
+        VERCEL_TOKEN: ${{Oa9cReonD90IRF4owl1OL2mf.VERCEL_TOKEN}}
       run: npx vercel --prod
