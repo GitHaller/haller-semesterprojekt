@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+// layout.tsx
 
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import Head from "next/head";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Akelo the Dog",
@@ -15,8 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <>
+      <Head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+      </Head>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </>
   );
 }
